@@ -86,7 +86,7 @@ int Binary_Tree::count(void){
     }
 }
 
-int _count(Node* current){
+int Binary_Tree::_count(Node* current){
     if(current==NULL) return 0;
     else{
         int node_left = _count(current->lChild);
@@ -104,4 +104,5 @@ int main(void){
     Binary_Tree beta = alpha.copy();
     cout<<beta.root->data<<endl;
     cout<<alpha.equal(beta)<<endl;
+    cout<<alpha.count()<<endl;
 }
